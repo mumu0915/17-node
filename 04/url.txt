@@ -1,0 +1,5 @@
+var url = require("url")
+url
+url.parse('http://localhost:8080/user/profile')
+url.parse('http://localhost:8080/user/profile')
+url.parse('http://localhost:8080/user?name=nick&age=17')

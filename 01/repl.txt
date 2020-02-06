@@ -1,0 +1,17 @@
+1+1
+1*15
+var x = 10 
+x
+
+y = 20
+y
+x+y
+do {
+x++;
+console.log(x)
+}while(x<15)
+_
+b=2
+var a = 1
+b=2
+_

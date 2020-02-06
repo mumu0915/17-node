@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function result(n) {
+            if (n == 1 || n == 2) {
+                return 1
+            };
+            return result(n - 2) + result(n - 1);
+        }
+    </script>
+    <!-- <script>
+        console.log('代码开始了');
+        console.log('中间执行的代码');
+        console.log('代码结束了');
+        
+        // 同步
+    </script> -->
+
+    <!-- <script>
+        console.log('代码开始了');
+        // 定时器 异步函数 等？？之后 再执行
+        setTimeout(function () {
+            console.log('中间执行的代码');
+        }, 0)
+        console.log('代码结束了');
+    </script> -->
+
+    <!-- <script>
+        console.log('代码开始了');
+
+        console.log(result(42));
+        
+        console.log('代码结束了');
+        // 同步
+    </script> -->
+    <script>
+        console.log('代码开始了');
+
+        setTimeout(function () {
+            console.log(result(42));
+        }, 0)
+
+
+        console.log('代码结束了');
+        // 异步
+    </script>
+
+
+</body>
+
+</html>
